@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" fill="none">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE8E0"/>
+      <stop offset="100%" stop-color="#E0D8CC"/>
+    </linearGradient>
+    <linearGradient id="royal6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="50%" stop-color="#0D1652"/>
+      <stop offset="100%" stop-color="#070B2E"/>
+    </linearGradient>
+    <linearGradient id="goldRich6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="25%" stop-color="#C9A962"/>
+      <stop offset="50%" stop-color="#E8D48B"/>
+      <stop offset="75%" stop-color="#C9A962"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <filter id="softShadow6" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0D1652" flood-opacity="0.3"/>
+    </filter>
+    <filter id="goldGlow6">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Brocade jacquard pattern -->
+    <pattern id="brocade6" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <!-- Central medallion -->
+      <path d="M20 10 L25 20 L20 30 L15 20 Z" fill="#C9A962" opacity="0.7"/>
+      <circle cx="20" cy="20" r="5" fill="none" stroke="#C9A962" stroke-width="1" opacity="0.5"/>
+      <!-- Corner flourishes -->
+      <path d="M5 5 Q10 10 5 15 Q0 10 5 5" fill="#C9A962" opacity="0.4"/>
+      <path d="M35 5 Q30 10 35 15 Q40 10 35 5" fill="#C9A962" opacity="0.4"/>
+      <path d="M5 25 Q10 30 5 35 Q0 30 5 25" fill="#C9A962" opacity="0.4"/>
+      <path d="M35 25 Q30 30 35 35 Q40 30 35 25" fill="#C9A962" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="550" fill="url(#bg6)"/>
+  
+  <!-- Subtle radial -->
+  <ellipse cx="200" cy="275" rx="200" ry="280" fill="#C9A962" opacity="0.03"/>
+  
+  <!-- Kurtha Shape - Structured silhouette -->
+  <g filter="url(#softShadow6)">
+    <!-- Main body - Rich brocade -->
+    <path d="M125 115 L150 95 L200 88 L250 95 L275 115 L285 165 L290 480 L110 480 L115 165 Z" fill="url(#royal6)"/>
+    
+    <!-- Brocade pattern overlay -->
+    <path d="M125 115 L150 95 L200 88 L250 95 L275 115 L285 165 L290 480 L110 480 L115 165 Z" fill="url(#brocade6)"/>
+    
+    <!-- Structured neckline with gold border -->
+    <path d="M150 95 Q175 88 200 88 Q225 88 250 95 L240 120 L200 130 L160 120 Z" fill="url(#royal6)"/>
+    <path d="M150 95 Q175 88 200 88 Q225 88 250 95" stroke="url(#goldRich6)" stroke-width="3" fill="none" filter="url(#goldGlow6)"/>
+    <path d="M152 100 Q200 92 248 100" stroke="url(#goldRich6)" stroke-width="1.5" fill="none" opacity="0.7"/>
+    
+    <!-- Neckline inner gold detail -->
+    <path d="M165 115 L200 125 L235 115" stroke="url(#goldRich6)" stroke-width="2" fill="none" filter="url(#goldGlow6)"/>
+    
+    <!-- Full sleeves - Left -->
+    <path d="M125 115 L80 130 L65 230 L95 242 L115 165" fill="url(#royal6)"/>
+    <path d="M125 115 L80 130 L65 230 L95 242 L115 165" fill="url(#brocade6)"/>
+    <!-- Sleeve gold borders -->
+    <path d="M65 220 L95 235" stroke="url(#goldRich6)" stroke-width="3" filter="url(#goldGlow6)"/>
+    <path d="M68 228 L92 240" stroke="url(#goldRich6)" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Full sleeves - Right -->
+    <path d="M275 115 L320 130 L335 230 L305 242 L285 165" fill="url(#royal6)"/>
+    <path d="M275 115 L320 130 L335 230 L305 242 L285 165" fill="url(#brocade6)"/>
+    <path d="M335 220 L305 235" stroke="url(#goldRich6)" stroke-width="3" filter="url(#goldGlow6)"/>
+    <path d="M332 228 L308 240" stroke="url(#goldRich6)" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Center gold panel with paisley motifs -->
+    <g filter="url(#goldGlow6)">
+      <line x1="200" y1="140" x2="200" y2="460" stroke="url(#goldRich6)" stroke-width="2"/>
+      
+      <!-- Paisley/Buta motifs -->
+      <path d="M195 180 Q185 190 195 210 Q210 200 195 180" fill="url(#goldRich6)" opacity="0.8"/>
+      <path d="M205 180 Q215 190 205 210 Q190 200 205 180" fill="url(#goldRich6)" opacity="0.8"/>
+      
+      <path d="M195 280 Q185 290 195 310 Q210 300 195 280" fill="url(#goldRich6)" opacity="0.7"/>
+      <path d="M205 280 Q215 290 205 310 Q190 300 205 280" fill="url(#goldRich6)" opacity="0.7"/>
+      
+      <path d="M195 380 Q185 390 195 410 Q210 400 195 380" fill="url(#goldRich6)" opacity="0.6"/>
+      <path d="M205 380 Q215 390 205 410 Q190 400 205 380" fill="url(#goldRich6)" opacity="0.6"/>
+    </g>
+    
+    <!-- Rich bottom border - multiple layers -->
+    <g filter="url(#goldGlow6)">
+      <rect x="110" y="445" width="180" height="30" fill="url(#goldRich6)" opacity="0.15"/>
+      <path d="M110 445 L290 445" stroke="url(#goldRich6)" stroke-width="4"/>
+      <path d="M112 455 L288 455" stroke="url(#goldRich6)" stroke-width="2.5"/>
+      <path d="M114 463 L286 463" stroke="url(#goldRich6)" stroke-width="2"/>
+      <path d="M116 470 L284 470" stroke="url(#goldRich6)" stroke-width="1.5"/>
+      <path d="M118 476 L282 476" stroke="url(#goldRich6)" stroke-width="1" opacity="0.7"/>
+    </g>
+    
+    <!-- Side gold borders -->
+    <line x1="118" y1="180" x2="114" y2="480" stroke="url(#goldRich6)" stroke-width="2" opacity="0.6"/>
+    <line x1="282" y1="180" x2="286" y2="480" stroke="url(#goldRich6)" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Royal corner ornaments -->
+  <g fill="url(#goldRich6)" opacity="0.5" filter="url(#goldGlow6)">
+    <!-- Top left -->
+    <path d="M15 15 L45 15 L45 18 L18 18 L18 45 L15 45 Z"/>
+    <path d="M25 25 L35 25 L35 28 L28 28 L28 35 L25 35 Z"/>
+    
+    <!-- Top right -->
+    <path d="M385 15 L355 15 L355 18 L382 18 L382 45 L385 45 Z"/>
+    <path d="M375 25 L365 25 L365 28 L372 28 L372 35 L375 35 Z"/>
+    
+    <!-- Bottom left -->
+    <path d="M15 535 L45 535 L45 532 L18 532 L18 505 L15 505 Z"/>
+    <path d="M25 525 L35 525 L35 522 L28 522 L28 515 L25 515 Z"/>
+    
+    <!-- Bottom right -->
+    <path d="M385 535 L355 535 L355 532 L382 532 L382 505 L385 505 Z"/>
+    <path d="M375 525 L365 525 L365 522 L372 522 L372 515 L375 515 Z"/>
+  </g>
+</svg>
+

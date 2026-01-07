@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" fill="none">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F4"/>
+      <stop offset="100%" stop-color="#F0EBE3"/>
+    </linearGradient>
+    <linearGradient id="sage5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A8B5A0"/>
+      <stop offset="50%" stop-color="#8FA084"/>
+      <stop offset="100%" stop-color="#7A8C6E"/>
+    </linearGradient>
+    <linearGradient id="gold5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4C4A8"/>
+      <stop offset="50%" stop-color="#C9A962"/>
+      <stop offset="100%" stop-color="#D4C4A8"/>
+    </linearGradient>
+    <filter id="softShadow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#7A8C6E" flood-opacity="0.18"/>
+    </filter>
+    <!-- Floral pattern -->
+    <pattern id="floral5" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <!-- Small flower -->
+      <circle cx="30" cy="30" r="3" fill="#7A8C6E" opacity="0.6"/>
+      <ellipse cx="30" cy="24" rx="2" ry="4" fill="#8FA084" opacity="0.5"/>
+      <ellipse cx="30" cy="36" rx="2" ry="4" fill="#8FA084" opacity="0.5"/>
+      <ellipse cx="24" cy="30" rx="4" ry="2" fill="#8FA084" opacity="0.5"/>
+      <ellipse cx="36" cy="30" rx="4" ry="2" fill="#8FA084" opacity="0.5"/>
+      <!-- Leaves -->
+      <path d="M10 50 Q15 45 20 50 Q15 55 10 50" fill="#7A8C6E" opacity="0.3"/>
+      <path d="M50 10 Q45 15 50 20 Q55 15 50 10" fill="#7A8C6E" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="550" fill="url(#bg5)"/>
+  
+  <!-- Light texture -->
+  <pattern id="linen5" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="4" fill="none"/>
+    <line x1="0" y1="2" x2="4" y2="2" stroke="#C9A962" stroke-width="0.3" opacity="0.08"/>
+    <line x1="2" y1="0" x2="2" y2="4" stroke="#C9A962" stroke-width="0.3" opacity="0.08"/>
+  </pattern>
+  <rect width="400" height="550" fill="url(#linen5)"/>
+  
+  <!-- Kurtha Shape - Straight cut -->
+  <g filter="url(#softShadow5)">
+    <!-- Main body - Chanderi fabric -->
+    <path d="M130 118 L155 100 L200 95 L245 100 L270 118 L280 165 L285 480 L115 480 L120 165 Z" fill="url(#sage5)"/>
+    
+    <!-- Woven floral pattern -->
+    <path d="M130 118 L155 100 L200 95 L245 100 L270 118 L280 165 L285 480 L115 480 L120 165 Z" fill="url(#floral5)"/>
+    
+    <!-- Chanderi sheen effect -->
+    <path d="M160 118 L200 95 L240 118 L250 200 L200 220 L150 200 Z" fill="#FFFFFF" opacity="0.15"/>
+    
+    <!-- Boat neckline -->
+    <path d="M155 100 Q200 90 245 100 Q235 118 200 120 Q165 118 155 100" fill="url(#sage5)"/>
+    <path d="M155 100 Q200 90 245 100" stroke="url(#gold5)" stroke-width="2" fill="none"/>
+    
+    <!-- Left sleeve - straight -->
+    <path d="M130 118 L90 130 L80 210 L105 218 L120 165" fill="url(#sage5)"/>
+    <path d="M130 118 L90 130 L80 210 L105 218 L120 165" fill="url(#floral5)"/>
+    <path d="M80 203 L105 212" stroke="url(#gold5)" stroke-width="1.5"/>
+    
+    <!-- Right sleeve - straight -->
+    <path d="M270 118 L310 130 L320 210 L295 218 L280 165" fill="url(#sage5)"/>
+    <path d="M270 118 L310 130 L320 210 L295 218 L280 165" fill="url(#floral5)"/>
+    <path d="M320 203 L295 212" stroke="url(#gold5)" stroke-width="1.5"/>
+    
+    <!-- Center seam -->
+    <line x1="200" y1="130" x2="200" y2="480" stroke="url(#gold5)" stroke-width="0.5" opacity="0.4"/>
+    
+    <!-- Decorative woven border at bottom -->
+    <rect x="115" y="460" width="170" height="15" fill="url(#gold5)" opacity="0.3"/>
+    <path d="M115 460 L285 460" stroke="url(#gold5)" stroke-width="2"/>
+    <path d="M117 475 L283 475" stroke="url(#gold5)" stroke-width="1.5"/>
+    
+    <!-- Side slits -->
+    <line x1="118" y1="420" x2="118" y2="480" stroke="url(#gold5)" stroke-width="1" opacity="0.5"/>
+    <line x1="282" y1="420" x2="282" y2="480" stroke="url(#gold5)" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Decorative floral corners -->
+  <g opacity="0.4">
+    <circle cx="30" cy="30" r="4" stroke="#A17F4A" stroke-width="1" fill="none"/>
+    <ellipse cx="30" cy="22" rx="2" ry="5" fill="none" stroke="#A17F4A" stroke-width="0.5"/>
+    <ellipse cx="30" cy="38" rx="2" ry="5" fill="none" stroke="#A17F4A" stroke-width="0.5"/>
+    <ellipse cx="22" cy="30" rx="5" ry="2" fill="none" stroke="#A17F4A" stroke-width="0.5"/>
+    <ellipse cx="38" cy="30" rx="5" ry="2" fill="none" stroke="#A17F4A" stroke-width="0.5"/>
+    
+    <circle cx="370" cy="30" r="4" stroke="#A17F4A" stroke-width="1" fill="none"/>
+    <circle cx="30" cy="520" r="4" stroke="#A17F4A" stroke-width="1" fill="none"/>
+    <circle cx="370" cy="520" r="4" stroke="#A17F4A" stroke-width="1" fill="none"/>
+  </g>
+</svg>
+

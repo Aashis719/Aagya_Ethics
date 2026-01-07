@@ -1,0 +1,413 @@
+@import "tailwindcss";
+
+/* ===== AAGYA ETHICS - Luxury Design System ===== */
+
+:root {
+  /* Primary Colors - Rich & Warm */
+  --maroon: #722F37;
+  --maroon-dark: #5A252C;
+  --maroon-light: #8B3A42;
+  --maroon-rich: #6B2D35;
+  
+  /* Gold Accents - Richer & Warmer */
+  --gold: #A17F4A;
+  --gold-bright: #C9A962;
+  --gold-light: #D4C4A8;
+  --gold-dark: #8A6B3D;
+  
+  /* Neutrals - Warmer, Reduced White */
+  --cream: #EDE8E0;
+  --pearl: #F3EDE4;
+  --ivory: #E8E2D8;
+  --warm-bg: #F0EAE0;
+  --soft-beige: #E0D8CC;
+  --sand: #D8D0C4;
+  
+  /* Text Colors - Better Contrast */
+  --text-primary: #1A1412;
+  --text-secondary: #3D3530;
+  --text-muted: #5A524C;
+  --text-light: #FFFDF9;
+  --text-subtle: #7A726C;
+  
+  /* Spacing */
+  --section-padding: clamp(80px, 12vh, 160px);
+  --content-gap: clamp(40px, 6vh, 80px);
+  --card-padding: clamp(24px, 4vw, 48px);
+  
+  /* Transitions */
+  --transition-fast: 200ms;
+  --transition-base: 300ms;
+  --transition-slow: 500ms;
+  --transition-luxury: 800ms;
+  
+  /* Shadows - Warmer */
+  --shadow-subtle: 0 2px 8px rgba(26, 20, 18, 0.06);
+  --shadow-card: 0 4px 20px rgba(26, 20, 18, 0.1);
+  --shadow-elevated: 0 12px 40px rgba(26, 20, 18, 0.14);
+  --shadow-hover: 0 20px 50px rgba(114, 47, 55, 0.18);
+}
+
+@theme inline {
+  --color-maroon: var(--maroon);
+  --color-maroon-dark: var(--maroon-dark);
+  --color-maroon-light: var(--maroon-light);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-cream: var(--cream);
+  --color-pearl: var(--pearl);
+  --color-ivory: var(--ivory);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-light: var(--text-light);
+  
+  --font-heading: var(--font-cormorant);
+  --font-body: var(--font-outfit);
+}
+
+/* ===== Base Styles ===== */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-primary);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* Remove default tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ===== Typography ===== */
+h1, h2, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--text-primary);
+  /* Prevent text rendering issues */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.font-heading {
+  font-family: var(--font-cormorant), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-body {
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ===== Selection ===== */
+::selection {
+  background-color: var(--gold-light);
+  color: var(--maroon-dark);
+}
+
+/* ===== Scrollbar - Subtle & Elegant ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* ===== Focus States ===== */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ===== Luxury Button Base ===== */
+.btn-luxury {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all var(--transition-base) ease;
+}
+
+.btn-luxury::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(161, 127, 74, 0.25),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.btn-luxury:hover::before {
+  left: 100%;
+}
+
+.btn-luxury:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(161, 127, 74, 0.25);
+}
+
+.btn-luxury:active {
+  transform: scale(0.98);
+}
+
+/* Filled variant */
+.btn-luxury-filled {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: var(--text-light);
+}
+
+.btn-luxury-filled:hover {
+  background: var(--maroon-dark);
+  border-color: var(--maroon-dark);
+}
+
+/* ===== Gold Divider ===== */
+.divider-gold {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--gold);
+}
+
+.divider-gold::before,
+.divider-gold::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-light),
+    transparent
+  );
+}
+
+/* ===== Glass Effect ===== */
+.glass {
+  background: rgba(237, 232, 224, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ===== Container ===== */
+.container-luxury {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container-luxury {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-luxury {
+    padding: 0 80px;
+  }
+}
+
+
+.container-navbar {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container-navbar {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-navbar {
+    padding: 0 44px;
+  }
+}
+
+/* ===== Section Spacing ===== */
+.section-padding {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* ===== Animation Utilities ===== */
+.will-animate {
+  will-change: transform, opacity;
+}
+
+/* GPU acceleration */
+.gpu-accelerate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ===== Respect Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== Image Styles ===== */
+.img-reveal {
+  opacity: 0;
+  filter: blur(20px);
+  transform: scale(1.05);
+  transition: all 1.2s ease-out;
+}
+
+.img-reveal.loaded {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+/* ===== Link Styles ===== */
+.link-underline {
+  position: relative;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: all var(--transition-base) ease;
+  transform: translateX(-50%);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* ===== Card Hover Effect ===== */
+.card-hover {
+  transition: all var(--transition-slow) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Touch devices */
+@media (hover: none) {
+  .card-hover:active {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+/* ===== Form Inputs ===== */
+.input-luxury {
+  width: 100%;
+  padding: 16px 20px;
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  background: var(--pearl);
+  border: 1px solid var(--gold-light);
+  border-radius: 0;
+  transition: all var(--transition-base) ease;
+}
+
+.input-luxury:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(161, 127, 74, 0.1);
+}
+
+.input-luxury::placeholder {
+  color: var(--text-subtle);
+}
+
+/* ===== Hide Scrollbar but Allow Scroll ===== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== Utility Classes ===== */
+.text-gold { color: var(--gold); }
+.text-gold-bright { color: var(--gold-bright); }
+.text-maroon { color: var(--maroon); }
+.bg-cream { background-color: var(--cream); }
+.bg-pearl { background-color: var(--pearl); }
+.bg-ivory { background-color: var(--ivory); }
+.bg-maroon { background-color: var(--maroon); }
+.border-gold { border-color: var(--gold); }
+.border-gold-light { border-color: var(--gold-light); }

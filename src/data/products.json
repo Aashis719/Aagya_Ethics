@@ -1,0 +1,162 @@
+{
+  "products": [
+    {
+      "id": "silk-embroidered-kurtha-maroon",
+      "slug": "silk-embroidered-kurtha-maroon",
+      "name": "Silk Embroidered Kurtha",
+      "subtitle": "Maroon & Gold Collection",
+      "price": 109,
+      "category": "kurtha",
+      "description": "Exquisitely crafted silk kurtha featuring intricate gold embroidery along the neckline and sleeves. This timeless piece combines traditional artistry with contemporary elegance, perfect for festive occasions and celebrations.",
+      "details": [
+        "Premium mulberry silk fabric",
+        "Hand-embroidered gold threadwork",
+        "Full sleeves with cuff detailing",
+        "Side slits for ease of movement",
+        "Comes with matching dupatta"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "images": [
+        "/images/products/Silk Embroidered Kurtha1.jpg",
+        "/images/products/Silk Embroidered Kurtha2.png",
+        "/images/products/Silk Embroidered Kurtha3.png"
+      ],
+      "image": "/images/products/Silk Embroidered Kurtha1.jpg",
+      "featured": true,
+      "new": true
+    },
+    {
+      "id": "velvet-zari-kurtha-wine",
+      "slug": "velvet-zari-kurtha-wine",
+      "name": "Royal Velvet Zari Detailed Kurtha",
+      "subtitle": "Royal Heritage Collection",
+      "price": 189,
+      "category": "kurtha",
+      "description": "Luxurious velvet kurtha adorned with traditional zari work. The deep wine color paired with golden zari creates a regal aesthetic that embodies royal elegance Wedding.",
+      "details": [
+        "Premium Italian velvet",
+        "Traditional zari embroidery",
+        "Three-quarter sleeves",
+        "A-line silhouette",
+        "Includes embellished dupatta",
+        "wedding wear"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "images": [
+        "/images/products/Velvet Zari Kurtha3.png",
+        "/images/products/Velvet Zari Kurtha2.jpg",
+        "/images/products/Velvet Zari Kurtha1.png"
+      ],
+      "image": "/images/products/Velvet Zari Kurtha1.png",
+      "featured": true,
+      "new": false
+    },
+    {
+      "id": "cotton-block-print-kurtha",
+      "slug": "cotton-block-print-kurtha",
+      "name": "Cotton Block Print Detailed Kurtha",
+      "subtitle": "The Artisan Series",
+      "price": 89,
+      "category": "kurtha",
+      "description": "Handcrafted cotton kurtha featuring traditional block printing techniques. Each piece is unique, showcasing the skill of master artisans and sustainable fashion practices.",
+      "details": [
+        "100% organic cotton",
+        "Hand block printed design",
+        "Breathable fabric",
+        "Relaxed fit",
+        "Eco-friendly dyes"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "images": [
+        "/images/products/Cotton Block Print Kurtha1.png",
+        "/images/products/Cotton Block Print Kurtha2.jpg",
+        "/images/products/Cotton Block Print Kurtha3.png"
+      ],
+      "image": "/images/products/Silk Embroidered Kurtha1.jpg",
+      "featured": true,
+      "new": false
+    },
+    {
+      "id": "georgette-sequin-kurtha",
+      "slug": "georgette-sequin-kurtha",
+      "name": "Georgette Kurtha with Sequins",
+      "subtitle": "Celebration ",
+      "price": 149,
+      "category": "kurtha",
+      "description": "Flowing georgette kurtha delicately embellished with hand-sewn sequins. The ethereal drape and shimmer make this piece perfect for evening celebrations.",
+      "details": [
+        "Pure georgette fabric",
+        "Hand-sewn sequin detailing",
+        "Flowing silhouette",
+        "Full sleeves with gathering",
+        "Includes contrast dupatta"
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "images": [
+        "/images/products/Georgette sequin kurtha1.jpg",
+        "/images/products/Georgette sequin kurtha2.png",
+        "/images/products/Georgette sequin kurtha3.png"
+      ],
+      "image": "/images/products/Georgette sequin kurtha1.jpg",
+      "featured": false,
+      "new": true
+    },
+    {
+      "id": "chanderi-floral-kurtha",
+      "slug": "chanderi-floral-kurtha",
+      "name": "Chanderi Floral Kurtha",
+      "subtitle": "Garden Dreams Collection",
+      "price": 119,
+      "category": "kurtha",
+      "description": "Delicate Chanderi silk kurtha featuring subtle floral motifs woven into the fabric. The lightweight material and soft sheen create an effortlessly elegant look.",
+      "details": [
+        "Chanderi silk blend",
+        "Woven floral patterns",
+        "Lightweight and breathable",
+        "Straight cut design",
+        "Paired with Chanderi dupatta"
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "images": [
+        "/images/products/chanderi floral kurtha1.jpg",
+        "/images/products/chanderi floral kurtha2.png",
+        "/images/products/chanderi floral kurtha3.png"
+      ],
+      "image": "/images/products/chanderi floral kurtha1.jpg",
+      "featured": false,
+      "new": false
+    },
+    {
+      "id": "brocade-royal-kurtha",
+      "slug": "brocade-royal-kurtha",
+      "name": "Brocade Royal Kurtha",
+      "subtitle": "Heritage Luxe Collection",
+      "price": 159,
+      "category": "kurtha",
+      "description": "Statement brocade kurtha woven with metallic threads creating a magnificent jacquard pattern. This piece represents the pinnacle of traditional Indian textile artistry.",
+      "details": [
+        "Premium brocade fabric",
+        "Metallic jacquard weave",
+        "Structured silhouette",
+        "Full sleeves",
+        "Heavy embellished dupatta included"
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "images": [
+        "/images/products/brocade royal kurtha1.jpg",
+        "/images/products/brocade royal kurtha2.png",
+        "/images/products/brocade royal kurtha3.png"
+      ],
+      "image": "/images/products/brocade royal kurtha1.jpg",
+      "featured": false,
+      "new": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "kurtha",
+      "name": "Kurthas",
+      "description": "Elegant ethnic wear for the modern woman"
+    }
+  ]
+}

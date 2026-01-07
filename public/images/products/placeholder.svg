@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#F5F0E6"/>
+  <rect x="200" y="300" width="200" height="200" fill="#E8DCC4" rx="4"/>
+  <text x="300" y="410" text-anchor="middle" fill="#C9A962" font-family="Georgia, serif" font-size="14">
+    Product Image
+  </text>
+</svg>
+
