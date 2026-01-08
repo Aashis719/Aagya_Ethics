@@ -121,16 +121,8 @@ export default function Footer() {
             <p className="text-xs text-[#FFFDF9]/50 font-body">
               © 2025 Aagya Ethics. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              {footerLinks.legal.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-xs text-[#FFFDF9]/50 hover:text-[#C9A962] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="text-xs text-[#FFFDF9]/50 font-body">
+              Designed by <Link href="https://x.com/Aashis_19" target="_blank" className="text-[#C9A962] hover:text-[#FFFDF9] transition-colors">Aashis</Link>
             </div>
           </div>
         </Container>
