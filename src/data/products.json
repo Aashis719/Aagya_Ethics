@@ -93,11 +93,11 @@
       ],
       "sizes": ["S", "M", "L", "XL"],
       "images": [
-        "/images/products/Georgette sequin kurtha1.jpg",
-        "/images/products/Georgette sequin kurtha2.png",
-        "/images/products/Georgette sequin kurtha3.png"
+        "/images/products/Georgette Sequin Kurtha1.jpg",
+        "/images/products/Georgette Sequin Kurtha2.png",
+        "/images/products/Georgette Sequin Kurtha3.png"
       ],
-      "image": "/images/products/Georgette sequin kurtha1.jpg",
+      "image": "/images/products/Georgette Sequin Kurtha1.jpg",
       "featured": false,
       "new": true
     },
@@ -118,11 +118,11 @@
       ],
       "sizes": ["XS", "S", "M", "L", "XL"],
       "images": [
-        "/images/products/chanderi floral kurtha1.jpg",
-        "/images/products/chanderi floral kurtha2.png",
-        "/images/products/chanderi floral kurtha3.png"
+        "/images/products/Chanderi Floral Kurtha1.jpg",
+        "/images/products/Chanderi Floral Kurtha2.png",
+        "/images/products/Chanderi Floral Kurtha3.png"
       ],
-      "image": "/images/products/chanderi floral kurtha1.jpg",
+      "image": "/images/products/Chanderi Floral Kurtha1.jpg",
       "featured": false,
       "new": false
     },
@@ -143,11 +143,11 @@
       ],
       "sizes": ["S", "M", "L", "XL"],
       "images": [
-        "/images/products/brocade royal kurtha1.jpg",
-        "/images/products/brocade royal kurtha2.png",
-        "/images/products/brocade royal kurtha3.png"
+        "/images/products/Brocade Royal Kurtha1.jpg",
+        "/images/products/Brocade Royal Kurtha2.png",
+        "/images/products/Brocade Royal Kurtha3.png"
       ],
-      "image": "/images/products/brocade royal kurtha1.jpg",
+      "image": "/images/products/Brocade Royal Kurtha1.jpg",
       "featured": false,
       "new": false
     }

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { cormorant, outfit } from "@/lib/fonts";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Aagya Ethics | Premium Ethnic Wear - Australia",
+  title: "Aagya Ethics | Premium Ethnic Wear",
   description:
-    "Discover exquisite, ethically curated kurthas and ethnic wear. Australian-owned brand offering premium quality traditional clothing for the modern woman.",
+    "Discover exquisite, ethically curated kurthas and ethnic wear. A brand offering premium quality traditional clothing for the modern woman.",
   keywords: [
     "ethnic wear",
     "kurtha",
@@ -14,6 +15,16 @@ export const metadata: Metadata = {
     "premium clothing",
     "traditional wear",
     "women's fashion",
+    "Aagya Ethics",
+    "premium kurthas",
+    "traditional clothing",
+    "modern kurthas",
+    "ethically sourced",
+    "fair trade",
+    "handmade kurthas",
+    "premium quality",
+    "traditional wear",
+    "Aagya"
   ],
   authors: [{ name: "Aagya Ethics" }],
   openGraph: {
@@ -36,6 +47,7 @@ export default function RootLayout({
         className={`${cormorant.variable} ${outfit.variable} font-body antialiased bg-cream text-text-primary`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
