@@ -35,7 +35,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    details: "Melbourne, Victoria",
+    details: "Rockdale, Sydney",
     description: "Australia",
   },
   {
