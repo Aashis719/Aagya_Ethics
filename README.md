@@ -17,6 +17,5 @@ Modern women seeking elegant ethnic wear for festive occasions, weddings, and cu
 
 ## Location
 **Rockdale, Sydney, Australia**  
-📧 hello@aagyaethics.com.au
 
 *Elegance woven in every thread.*
