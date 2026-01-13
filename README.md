@@ -13,7 +13,7 @@
 - Newsletter signup, contact forms, and size guide  
 
 ## Target Audience
-Modern women seeking elegant ethnic wear for festive occasions, weddings, and cultural events.
+Modern women seeking elegant ethnic wear for festive occasions, weddings, and cultural events. 
 
 ## Location
 **Rockdale, Sydney, Australia**  
