@@ -6,33 +6,81 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Aagya Ethics | Premium Ethnic Wear",
   description:
-    "Discover exquisite, ethically curated kurthas and ethnic wear. A brand offering premium quality traditional clothing for the modern woman.",
+    "Elegance woven in every thread. Discover exquisite, ethically curated kurthas and ethnic wear. Premium quality traditional clothing for the modern woman.",
   keywords: [
-    "ethnic wear",
-    "kurtha",
-    "Indian fashion",
-    "Australian fashion",
-    "premium clothing",
-    "traditional wear",
-    "women's fashion",
     "Aagya Ethics",
     "premium kurthas",
-    "traditional clothing",
-    "modern kurthas",
-    "ethically sourced",
-    "fair trade",
-    "handmade kurthas",
-    "premium quality",
+    "ethnic wear Australia",
+    "luxury kurtha",
     "traditional wear",
-    "Aagya"
+    "women's ethnic fashion",
+    "silk embroidered kurtha",
+    "velvet kurtha",
+    "designer kurtha",
+    "Indian fashion Australia",
+    "premium ethnic clothing",
+    "modern kurthas",
+    "ethically sourced fashion",
+    "handcrafted kurthas",
+    "luxury ethnic wear",
+    "traditional clothing Australia",
+    "wedding kurtha",
+    "festive wear",
+    "Aagya",
+    "premium quality ethnic wear"
   ],
   authors: [{ name: "Aagya Ethics" }],
+  metadataBase: new URL("https://aagyaethics.com"),
+  
+  // Open Graph (Facebook, LinkedIn)
   openGraph: {
     title: "Aagya Ethics | Premium Ethnic Wear",
     description:
-      "Elegance woven in every thread. Discover our collection of premium kurthas.",
+      "Elegance woven in every thread. Discover our collection of premium kurthas crafted for the modern woman.",
     type: "website",
     locale: "en_AU",
+    url: "https://aagyaethics.com",
+    siteName: "Aagya Ethics",
+    images: [
+      {
+        url: "/images/AE.png",
+        width: 1200,
+        height: 630,
+        alt: "Aagya Ethics - Premium Ethnic Wear",
+        type: "image/png",
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "Aagya Ethics | Premium Ethnic Wear",
+    description:
+      "Elegance woven in every thread. Discover our collection of premium kurthas crafted for the modern woman.",
+    images: ["/images/AE.png"],
+    creator: "@AagyaEthics",
+    site: "@AagyaEthics",
+  },
+  
+  // Additional metadata
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  
+  category: "fashion",
+  
+  // Verification and other tags
+  other: {
+    "fb:app_id": "your-facebook-app-id", // Replace with actual Facebook App ID when available
   },
 };
 

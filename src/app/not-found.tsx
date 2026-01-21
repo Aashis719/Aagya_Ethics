@@ -14,7 +14,7 @@ export default function NotFound() {
           <div className="text-center max-w-xl mx-auto py-20">
             {/* 404 Display */}
             <div className="mb-8">
-              <span className="font-heading text-8xl md:text-9xl text-gold/20">
+              <span className="font-heading text-8xl md:text-9xl text-gold/80">
                 404
               </span>
             </div>
@@ -24,7 +24,7 @@ export default function NotFound() {
             </h1>
 
             <p className="text-text-secondary font-body font-light mb-8">
-            The page you&apos;re looking for doesn&apos;t exist or has been moved. 
+            The page you&apos;re looking for doesn&apos;t exist 
             Let&apos;s get you back on track.
             </p>
 
@@ -32,12 +32,12 @@ export default function NotFound() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/">
-                <Button variant="primary" size="md">
+                <Button variant="primary" size="md" className="cursor-pointer">
                   Return Home
                 </Button>
               </Link>
-              <Link href="/shop">
-                <Button variant="secondary" size="md">
+              <Link href="/shop" >
+                <Button variant="secondary" size="md" className="cursor-pointer">
                   Browse Shop
                 </Button>
               </Link>
