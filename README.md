@@ -2,7 +2,7 @@
 
 ![Aagya Ethics Homepage](./public/images/homepage-aagya-ethics.png)
 
-**Aagya Ethics** is an Australian-owned luxury ethnic wear brand focused on premium kurthas for the modern woman. The website delivers a refined, high-end shopping experience inspired by elegance and craftsmanship.
+**Aagya Ethics** is an luxury ethnic wear brand focused on premium kurthas for the modern woman. The website delivers a refined, high-end shopping experience inspired by elegance and craftsmanship.
 
 ## Features
 - Luxury, responsive UI with smooth animations  
