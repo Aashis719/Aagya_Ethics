@@ -84,7 +84,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
   };
 
   return (
-    <AnimatePresence>
+    <AnimatePresence onExitComplete={() => setQuery("")}>
       {isOpen && (
         <motion.div
           className="fixed inset-0 z-[100] flex items-start justify-center"
