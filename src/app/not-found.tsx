@@ -24,7 +24,7 @@ export default function NotFound() {
             </h1>
 
             <p className="text-text-secondary font-body font-light mb-8">
-            The page you&apos;re looking for doesn&apos;t exist 
+            The page you&apos;re looking for doesn&apos;t exist  
             Let&apos;s get you back on track.
             </p>
 
