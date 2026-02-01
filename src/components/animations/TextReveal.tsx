@@ -52,7 +52,7 @@ export default function TextReveal({
           </motion.span>
         </motion.span>
       ))}
-    </motion.div>
+    </motion.div> 
   );
 }
 
