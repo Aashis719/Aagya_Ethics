@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     "wedding kurtha",
     "festive wear",
     "Aagya",
-    "premium quality ethnic wear"
+    "premium quality ethnic wear" ,
+    "Aagya kurtha"
   ],
   authors: [{ name: "Aagya Ethics" }],
   metadataBase: new URL("https://aagyaethics.com"),
